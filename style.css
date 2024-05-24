@@ -357,3 +357,45 @@ font-size: 0.7rem;
     font-size: 24px;
     cursor: pointer;
 }
+@media (max-width: 600px) {
+           .nav-search, .nav-address, .nav-signin, .nav-return, .new-cart {
+               flex-basis: 100%;
+               text-align: center;
+               margin: 5px 0;
+           }
+           .nav-search {
+               flex-grow: 0;
+           }
+           .shop-section {
+               display: block;
+           }
+           .box {
+               width: 100%;
+               margin: 10px 0;
+           }
+       }
+
+       @media (min-width: 601px) and (max-width: 1024px) {
+           .nav-search input {
+               padding: 10px;
+           }
+           .shop-section {
+               justify-content: space-around;
+           }
+           .box {
+               width: 48%;
+           }
+       }
+
+       @media (min-width: 1025px) {
+           .navbar {
+               padding: 20px;
+           }
+           .shop-section {
+               justify-content: space-between;
+           }
+           .box {
+               width: 23%;
+           }
+       }
+   
