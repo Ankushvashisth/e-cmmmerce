@@ -23,7 +23,7 @@ a {
     text-decoration: none; /* Text decoration ko remove karne ke liye */
 }
 .logo{
-    background-image: url(amazon_logo.png);
+    background-image: url("ev3.png");
     background-size: cover;
     height:50px;
     width: 100%;
@@ -242,7 +242,7 @@ ul a {
 }
 
 .logo{
-    background-image: url("amazon_logo.png");
+    background-image: url("ev3.png");
     background-size: cover;
     height:50px;
     width: 100px;
@@ -357,45 +357,84 @@ font-size: 0.7rem;
     font-size: 24px;
     cursor: pointer;
 }
-@media (max-width: 600px) {
-           .nav-search, .nav-address, .nav-signin, .nav-return, .new-cart {
-               flex-basis: 100%;
-               text-align: center;
-               margin: 5px 0;
-           }
-           .nav-search {
-               flex-grow: 0;
-           }
-           .shop-section {
-               display: block;
-           }
-           .box {
-               width: 100%;
-               margin: 10px 0;
-           }
-       }
+@media only screen and (max-width: 600px) {
+    .product {
+        width: 100%; /* Adjust the width to fit the screen */
+        margin: 10px auto; /* Center-align the product */
+        padding: 15px; /* Adjust padding */
+    }
 
-       @media (min-width: 601px) and (max-width: 1024px) {
-           .nav-search input {
-               padding: 10px;
-           }
-           .shop-section {
-               justify-content: space-around;
-           }
-           .box {
-               width: 48%;
-           }
-       }
+    .product img {
+        height: auto; /* Make the image responsive */
+    }
 
-       @media (min-width: 1025px) {
-           .navbar {
-               padding: 20px;
-           }
-           .shop-section {
-               justify-content: space-between;
-           }
-           .box {
-               width: 23%;
-           }
-       }
-   
+    .product-info {
+        margin-top: 15px; /* Adjust margin */
+    }
+
+    .product-info h3 {
+        font-size: 16px; /* Adjust font size */
+    }
+
+    .product-info p {
+        font-size: 14px; /* Adjust font size */
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    footer {
+      flex-direction: column; /* Change to a single column layout */
+    }
+
+    .foot-panel1,
+    .foot-panel2,
+    .foot-panel3,
+    .foot-panel4 {
+      flex: 1 1 100%; /* Each panel takes the full width */
+    }
+
+    .foot-panel2 ul a {
+      margin-right: 0; /* Remove right margin for footer links */
+      margin-bottom: 10px; /* Add bottom margin for footer links */
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .chatbot-widget {
+        width: 80%; /* Adjust chatbot width for smaller screens */
+    }
+
+    .chatbot-header h3 {
+        font-size: 18px; /* Decrease header font size for smaller screens */
+    }
+
+    .chatbot-input input[type="text"] {
+        width: calc(100% - 50px); /* Adjust input width for smaller screens */
+    }
+
+    .chatbot-input button {
+        width: 50px; /* Adjust button width for smaller screens */
+    }
+}
+@media only screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .nav-search {
+        margin-top: 10px;
+    }
+
+    .navbar .new-cart {
+        margin-top: 10px;
+    }
+
+    .box {
+        width: calc(50% - 40px);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .box {
+        width: calc(100% - 40px);
+    }
+}

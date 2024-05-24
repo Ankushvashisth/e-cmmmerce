@@ -4,11 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
-    <link rel="icon" type="image/png" style="border-radius: 10px;" href="icon.png">
+    <link rel="icon" type="image/png" style="border-radius: 10px;" href="android-chrome-512x512.png">
     <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
    <link rel="stylesheet" href="style.css">
    <title>Evvrio</title>
 </head>
+<style>
+    
+    @media only screen and (max-width: 768px) {
+        .navbar {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        .nav-menu {
+            margin-top: 10px;
+        }
+    
+        .search-container {
+            margin-top: 10px;
+        }
+    
+        .search-input {
+            width: 100%;
+        }
+    }
+    @media only screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .nav-logo {
+        margin-bottom: 20px; /* Add space between logo and other navbar items */
+    }
+
+    .nav-address,
+    .nav-search,
+    .nav-signin,
+    .nav-return,
+    .new-cart {
+        margin-top: 10px; /* Add space between navbar items */
+    }
+
+    .nav-address,
+    .nav-search,
+    .nav-signin,
+    .nav-return,
+    .new-cart,
+    .panel,
+    .chatbot-button {
+        width: 100%; /* Make navbar items full-width */
+    }
+
+    .search-select {
+        width: auto; /* Adjust width for select box */
+    }
+
+    .hero-msg {
+        font-size: 0.75rem; /* Reduce font size for hero message */
+    }
+
+    .shop-section {
+        flex-direction: column; /* Stack shop boxes vertically */
+        align-items: center; /* Center shop boxes */
+    }
+
+    .box {
+        width: 90%; /* Make shop boxes full-width */
+    }
+}
+
+/* Media queries for larger screens */
+@media only screen and (min-width: 992px) {
+    /* Add styles for larger screens here */
+}</style>
 
 <body>
     <header>

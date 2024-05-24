@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evvrio-sell</title>
-    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="icon" type="image/png" href="android-chrome-512x512.png">
     <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
    <link rel="stylesheet" href="style.css">
 </head>
@@ -83,6 +83,93 @@
     .steps h3{
         margin-top: 5px;
         font-size: 16px;
+    }
+    @media only screen and (max-width: 768px) {
+        /* Header */
+        h1 {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 p {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+
+        button {
+            margin-left: 0;
+        }
+
+        /* Sells section */
+        .sells {
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .sells h3 {
+            font-size: 24px;
+            margin-top: 50px;
+        }
+
+        .sells img {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .sells p {
+            margin-top: 20px;
+        }
+
+        /* Sell steps section */
+        .sell_steps {
+            margin: 20px;
+        }
+
+        .steps {
+            width: 90%;
+        }
+
+        .steps h3 {
+            font-size: 14px;
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        .h1 p {
+            margin-right: 50px; /* Adjust margin for smaller screens */
+        }
+
+        .h1 button {
+            margin-left: 50px; /* Adjust margin for smaller screens */
+        }
+
+        .sells {
+            flex-direction: column; /* Stack items vertically for smaller screens */
+            height: auto; /* Set height to auto for smaller screens */
+            padding: 0 20px; /* Adjust padding for smaller screens */
+        }
+
+        .sells h3 {
+            font-size: 24px; /* Reduce font size for smaller screens */
+            margin-left: 0; /* Remove left margin for smaller screens */
+            text-align: center; /* Center align text for smaller screens */
+        }
+
+        .sells img {
+            width: 80%; /* Adjust image width for smaller screens */
+            margin: 20px auto; /* Center align image for smaller screens */
+        }
+
+        .sells p {
+            text-align: center; /* Center align text for smaller screens */
+        }
+
+        .sell_steps {
+            margin: 20px; /* Adjust margin for smaller screens */
+        }
+
+        .steps {
+            width: 90%; /* Adjust width for smaller screens */
+        }
     }
 </style>
 <body>

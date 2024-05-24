@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Amazon-Location</title>
-<link rel="icon" type="image/png" style="border-radius: 10px;" href="icon.png">
+<title>Evvrio-Location</title>
+<link rel="icon" type="image/png" style="border-radius: 10px;" href="android-chrome-512x512.png">
     <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
    <link rel="stylesheet" href="style.css">
 <style>
@@ -63,7 +63,21 @@
     height: 200px;
     margin-right: 50px;
 }
-  
+@media only screen and (max-width: 768px) {
+  .popup {
+      width: 80%; /* Adjust popup width for smaller screens */
+  }
+
+  .container {
+      margin-top: 20px; /* Adjust margin for smaller screens */
+  }
+
+  .container img {
+      width: 150px; /* Adjust image size for smaller screens */
+      height: 150px;
+      margin-right: 0; /* Remove right margin for smaller screens */
+  }
+}
 </style>
 </head>
 <body>

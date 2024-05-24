@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
-    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="icon" type="image/png" href="android-chrome-512x512.png">
     <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
    <link rel="stylesheet" href="style.css">
    <title>Evvrio-sell product</title>
@@ -44,6 +44,33 @@
     }
     .product-rating {
       color: gold;
+    }
+    @media only screen and (min-width: 768px) {
+      .product {
+        width: 45%; /* Display two products per row */
+      }
+    }
+    
+    /* Adjustments for even larger screens */
+    @media only screen and (min-width: 992px) {
+      .product {
+        width: 30%; /* Display three products per row */
+      }
+    }
+    
+    /* Adjustments for extra-large screens */
+    @media only screen and (min-width: 1200px) {
+      .product {
+        width: 23%; /* Display four products per row */
+      }
+    }
+    
+    /* Adjustments for smaller screens */
+    @media only screen and (max-width: 600px) {
+      .product {
+        width: 100%; /* Take up full width */
+        margin: 10px 0; /* Add some space between products */
+      }
     }
   </style>
 <body>

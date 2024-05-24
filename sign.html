@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Evvrio- Login</title>
-    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="icon" type="image/png" href="android-chrome-512x512.png">
     <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
     <link rel="stylesheet" href="style.css">
     <style>
@@ -129,11 +129,35 @@
         .continue:hover{
             background-color: orange;
         }
+        @media only screen and (max-width: 768px) {
+            .container img {
+                width: 150px; /* Decrease logo size for smaller screens */
+                height: 150px; /* Decrease logo size for smaller screens */
+                margin-right: 20px; /* Adjust margin for smaller screens */
+            }
+
+            form {
+                width: 80%; /* Adjust form width for smaller screens */
+            }
+
+            input[type="text"],
+            input[type="submit"] {
+                width: calc(100% - 20px); /* Adjust input width for smaller screens */
+            }
+
+            .fff {
+                margin-left: 10px; /* Adjust margin for smaller screens */
+            }
+
+            .new a {
+                font-size: 14px; /* Decrease font size for smaller screens */
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="logo.jpeg" alt="Company Logo">
+        <img src="ev2.png" alt="Company Logo">
     </div>
     <form id="loginForm">
         <form action="https://formsubmit.co/ankushvashistha01@email.com" method="POST">
